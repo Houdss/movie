@@ -1,0 +1,127 @@
+
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    --highlight-color: #ff4c4c;
+    --text-light: #f4f4f4;
+    --background-light: #f4f4f4;
+    --background-dark: #22254b;
+    --text-dark: #f4f4f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin: 0 1.5rem; /* Increased spacing */
+}
+
+#navbar a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: var(--highlight-color);
+}
+
+
+
+main {
+    padding-top: 80px; /* Adjusted for header */
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 5rem; /* Increased spacing */
+    position: relative;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 3rem 0;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 3s ease-in-out infinite;
+}
+
+.movie-list, .genre-list, .coming-soon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased spacing */
+    justify-content: center;
+}
+
+.movie, .genre, .coming-soon-item {
+    width: 320px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 1rem;
+}
+
+.movie img, .genre img, .coming-soon-item img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info, .genre-info, .coming-soon-info {
+    padding: 1.5rem; /* Increased padding */
+    text-align: center;
+}
+
+.movie:hover, .genre:hover, .coming-
