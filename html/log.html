@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/log.css"> <!-- Ensure path is correct -->
+    <title>Login</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="header">
+        <h1>Batelflix</h1>
+    </div>
+    <div class="container">
+        <h1 id="login-title">Please Login</h1> 
+        <form id="loginForm">
+            <div class="form-control">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-control">
+                <label for="password" id="password-label">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <p class="text">Don't have an account? <a href="#">Register</a></p>
+        </form>
+        <div id="loading" class="loader"></div> <!-- Replaced with loader -->
+        <p id="successMessage" class="success-text">You logged in successfully!</p>
+    </div>
+    
+    <script src="../script/log.js"></script> <!-- Ensure path is correct -->
+</body>
+</html>
